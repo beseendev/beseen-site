@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte | BeSeen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-height-screen pt-32">
+    <div class="bg-atmosphere"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold font-poppins">
+                <span class="text-green-500">Be</span>Seen
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-green-500 transition">Início</a>
+                <a href="privacy.html" class="hover:text-green-500 transition">Privacidade</a>
+            </div>
+            <button class="bg-green-500 text-slate-950 px-6 py-2.5 rounded-full font-bold text-sm btn-glow">
+                Baixar App
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-20">
+        <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-md rounded-3xl p-10 border border-white/5 text-center stagger-item visible">
+            <div class="text-5xl mb-6">👋</div>
+            <h1 class="text-3xl font-bold font-poppins mb-4">Central de Suporte</h1>
+            <p class="text-slate-400 mb-10">Como podemos ajudar você hoje? Selecione uma opção para entrar em contato com nossa equipe.</p>
+
+            <div class="space-y-4">
+                <a href="mailto:beseensuporte@gmail.com?subject=BeSeen%20-%20Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Dados" class="block w-full bg-green-500 text-slate-950 py-4 rounded-xl font-bold btn-glow transition">
+                    Exclusão de Dados
+                </a>
+                <a href="mailto:beseensuporte@gmail.com?subject=BeSeen%20-%20Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta" class="block w-full bg-green-500 text-slate-950 py-4 rounded-xl font-bold btn-glow transition">
+                    Exclusão de Conta
+                </a>
+                <a href="mailto:beseensuporte@gmail.com?subject=BeSeen%20-%20Suporte%20%2F%20Outros%20Assuntos" class="block w-full border-2 border-green-500 text-green-500 py-4 rounded-xl font-bold hover:bg-green-500 hover:text-slate-950 transition-all duration-300">
+                    Outros Assuntos
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 py-10 px-6 border-t border-white/5 text-center mt-auto">
+        <p class="text-slate-500 text-sm">© 2026 BeSeen. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
