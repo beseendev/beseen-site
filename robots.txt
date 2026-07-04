@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.idea/
+
+# Sitemap
+Sitemap: https://beseen.app.br/sitemap.xml
+
+# Delays (em segundos)
+Crawl-delay: 1
