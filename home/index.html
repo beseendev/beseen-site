@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSeen | O seu talento merece ser visto</title>
+    <link rel="icon" href="../beseen.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="bg-atmosphere"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-hex top-1/4 left-10 w-24 h-24 bg-green-500 rounded-full blur-3xl"></div>
+    <div class="floating-hex bottom-1/4 right-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold font-poppins">
+                <span class="text-green-500">Be</span>Seen
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#funcionalidades" class="hover:text-green-500 transition">Funcionalidades</a>
+                <a href="../support/" class="hover:text-green-500 transition">Suporte</a>
+                <a href="../privacy/" class="hover:text-green-500 transition">Privacidade</a>
+            </div>
+            <a href="#cta" class="bg-green-500 text-slate-950 px-6 py-2.5 rounded-full font-bold text-sm btn-glow inline-block">
+                Baixar App
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-40 pb-20 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in-left">
+                <h1 class="text-5xl md:text-7xl font-bold font-poppins leading-tight mb-6">
+                    O seu talento merece ser <span class="text-green-500">visto</span> pelo mundo.
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+                    A ponte definitiva entre atletas e os maiores clubes e olheiros profissionais. Mostre suas habilidades e seja descoberto.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="openModal('modal-atleta')" class="bg-green-500 text-slate-950 px-8 py-4 rounded-xl font-bold btn-glow flex items-center group">
+                        Sou Atleta
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </button>
+                    <button onclick="openModal('modal-olheiro')" class="border-2 border-green-500 text-green-500 px-8 py-4 rounded-xl font-bold hover:bg-green-500 hover:text-slate-950 transition-all duration-300">
+                        Sou Olheiro
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-end relative">
+                <div class="radar-box">
+                    <div class="radar-line"></div>
+                    <div class="mockup-phone">
+                        <div class="mockup-screen">
+                            <!-- Simulating Video Feed -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10 p-6 flex flex-col justify-end">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center font-bold text-slate-900">JS</div>
+                                    <div>
+                                        <p class="text-sm font-bold">João Silva</p>
+                                        <p class="text-xs text-slate-300">Atacante | 18 anos</p>
+                                    </div>
+                                </div>
+                                <div class="h-1 bg-white/20 rounded-full w-full">
+                                    <div class="h-full bg-green-500 w-2/3"></div>
+                                </div>
+                            </div>
+                            <div class="video-placeholder flex items-center justify-center">
+                                <svg class="w-20 h-20 text-white/20 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.5 9a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative Ball -->
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4.5-9.5l1.5-1.5 2 2 4-4 1.5 1.5L11 14l-3.5-3.5z"/></svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Arena Section -->
+    <section id="funcionalidades" class="bg-slate-800 skew-section py-32 overflow-hidden">
+        <div class="skew-inner max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 stagger-item">A Arena: Onde o Jogo Acontece</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg stagger-item">Explore o feed vertical de vídeos e encontre atletas filtrando por posição, altura, idade e pé dominante.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 card-3d stagger-item" onmousemove="handleHover(event, this)" onmouseleave="resetHover(this)">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Perfis Verificados</h3>
+                    <p class="text-slate-400">Segurança total para clubes e atletas. Validamos cada perfil para garantir conexões reais.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 card-3d stagger-item" onmousemove="handleHover(event, this)" onmouseleave="resetHover(this)">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Chat Direto</h3>
+                    <p class="text-slate-400">Conecte-se e receba convites para testes sem intermediários. O contato é direto com quem decide.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 card-3d stagger-item" onmousemove="handleHover(event, this)" onmouseleave="resetHover(this)">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Filtros Avançados</h3>
+                    <p class="text-slate-400">Olheiros encontram o talento exato que procuram em segundos através de algoritmos de busca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-green-500/20 to-blue-500/10 rounded-3xl p-10 md:p-16 border border-white/10 text-center stagger-item">
+                <h2 class="text-3xl md:text-5xl font-bold font-poppins mb-6">Pronto para entrar em campo ou descobrir o próximo craque?</h2>
+                <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                    Não espere mais para mostrar o seu talento ou encontrar a próxima estrela do futebol. O BeSeen está disponível para iOS e Android.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button class="bg-slate-900 border border-white/10 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-slate-800 transition btn-glow">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.341c-.551 0-1.121.138-1.478.397-.474.346-.639.88-.639 1.491 0 .742.348 1.348.874 1.701.357.24 1.053.302 1.564.302 2.652 0 4.156-2.023 4.156-4.477 0-2.311-1.338-3.563-3.235-3.563-1.202 0-2.34.662-2.73 1.353-.263.468-.316 1.054-.316 1.554 0 .584.143 1.082.404 1.242zm-3.585-3.216c0-.96-.611-1.617-1.555-1.617-.934 0-1.545.657-1.545 1.617 0 .966.611 1.623 1.545 1.623.944 0 1.555-.657 1.555-1.623zm-3.585 0c0-.96-.611-1.617-1.555-1.617-.934 0-1.545.657-1.545 1.617 0 .966.611 1.623 1.545 1.623.944 0 1.555-.657 1.555-1.623z"/></svg>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400">Em breve na</p>
+                            <p class="text-sm font-bold">App Store</p>
+                        </div>
+                    </button>
+                    <a href="https://play.google.com/store/apps/details?id=com.beseen.app.official&pcampaignid=web_share" target="_blank" class="bg-slate-900 border border-white/10 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-slate-800 transition btn-glow">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.1-.132l-.001.002V1.948c0-.05.003-.099.01-.146l-.01.012zM14.636 12.844l2.525 2.525-10.74 6.137 8.215-8.662zm3.437-3.437l3.056 1.747c.542.31.871.885.871 1.516a1.745 1.745 0 01-.871 1.516l-3.056 1.747-2.825-2.825 2.825-2.825zm-2.825-2.825L14.636 11.156l-8.215-8.662 10.74 6.137-2.525 2.525z"/></svg>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400">Disponível no</p>
+                            <p class="text-sm font-bold">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 pt-20 pb-10 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-bold font-poppins mb-6">
+                    <span class="text-green-500">Be</span>Seen
+                </div>
+                <p class="text-slate-400 max-w-sm">
+                    Transformando a forma como o talento é descoberto. A plataforma digital para o futuro do esporte.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Empresa</h4>
+                <ul class="space-y-4 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-green-500 transition">Sobre Nós</a></li>
+                    <li><a href="../support/" class="hover:text-green-500 transition">Central de Ajuda</a></li>
+                    <li><a href="../privacy/" class="hover:text-green-500 transition">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Social</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/beseenoficial/" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-green-500 hover:text-slate-950 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.335 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.335 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.335-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.335-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31 1.266-.058 1.646-.07 4.85-.07zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.778 6.98 6.978 1.28.058 1.688.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 text-center text-slate-500 text-xs">
+            © 2026 BeSeen. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-atleta" class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-slate-950/80 backdrop-blur-sm">
+        <div class="bg-slate-800 border border-white/10 w-full max-w-lg rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <button onclick="closeModal('modal-atleta')" class="absolute top-6 right-6 z-10 text-slate-400 hover:text-white transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div id="atleta-step-1" class="modal-step">
+                <div class="text-4xl mb-6">🚀</div>
+                <h2 class="text-3xl font-bold font-poppins mb-4">Sua Jornada Começa Aqui</h2>
+                <p class="text-slate-400 mb-8">No BeSeen, transformamos seu celular em uma vitrine mundial. Pronto para ver como funciona?</p>
+                <button onclick="nextStep('atleta', 2)" class="w-full bg-green-500 text-slate-950 font-bold py-4 rounded-xl btn-glow">Ver o Caminho do Craque</button>
+            </div>
+
+            <div id="atleta-step-2" class="modal-step hidden">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-500 font-bold">1</div>
+                    <h3 class="text-xl font-bold">Grave e Poste</h3>
+                </div>
+                <p class="text-slate-400 mb-8">Suba vídeos de seus treinos e jogos. Nosso feed é otimizado para que olheiros vejam seus melhores ângulos e fundamentos.</p>
+                <button onclick="nextStep('atleta', 3)" class="w-full border border-green-500 text-green-500 py-3 rounded-xl hover:bg-green-500/10 transition">Próximo Passo</button>
+            </div>
+
+            <div id="atleta-step-3" class="modal-step hidden">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-500 font-bold">2</div>
+                    <h3 class="text-xl font-bold">Seja Analisado</h3>
+                </div>
+                <p class="text-slate-400 mb-8">Seu perfil contém estatísticas completas. Olheiros filtram por posição, idade e pé dominante para te encontrar.</p>
+                <button onclick="nextStep('atleta', 4)" class="w-full border border-green-500 text-green-500 py-3 rounded-xl hover:bg-green-500/10 transition">Última Etapa</button>
+            </div>
+
+            <div id="atleta-step-4" class="modal-step hidden">
+                <div class="text-center">
+                    <div class="text-5xl mb-6">🏆</div>
+                    <h3 class="text-2xl font-bold mb-4">O Convite Chegou!</h3>
+                    <p class="text-slate-400 mb-8">Receba notificações de chats e convites para testes diretamente no app. O BeSeen é a sua chance real.</p>
+                    <button onclick="closeModal('modal-atleta')" class="w-full bg-green-500 text-slate-950 font-bold py-4 rounded-xl btn-glow">Estou Pronto para Brilhar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-olheiro" class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-slate-950/80 backdrop-blur-sm">
+        <div class="bg-slate-800 border border-white/10 w-full max-w-lg rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <button onclick="closeModal('modal-olheiro')" class="absolute top-6 right-6 z-10 text-slate-400 hover:text-white transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div id="olheiro-step-1" class="modal-step">
+                <div class="text-4xl mb-6">🎯</div>
+                <h2 class="text-3xl font-bold font-poppins mb-4">Inteligência no Scout</h2>
+                <p class="text-slate-400 mb-8">O BeSeen não é apenas um feed, é uma ferramenta de gestão. Veja como otimizamos sua busca por talentos.</p>
+                <button onclick="nextStep('olheiro', 2)" class="w-full border-2 border-green-500 text-green-500 font-bold py-4 rounded-xl hover:bg-green-500 hover:text-slate-950 transition-all duration-300">Explorar Ferramentas</button>
+            </div>
+
+            <div id="olheiro-step-2" class="modal-step hidden">
+                <h3 class="text-xl font-bold mb-6 text-green-500">Radar de Precisão</h3>
+                <div class="space-y-4 mb-8">
+                    <div class="bg-slate-900 p-4 rounded-xl border border-white/5 flex items-center justify-between">
+                        <span class="text-sm">Filtro: Atacante / Sub-17</span>
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-white/5 flex items-center justify-between opacity-50">
+                        <span class="text-sm">Filtro: Pé Esquerdo</span>
+                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    </div>
+                </div>
+                <p class="text-slate-400 mb-6">Encontre exatamente o perfil que falta no seu elenco em segundos, sem viagens desnecessárias.</p>
+                <button onclick="nextStep('olheiro', 3)" class="w-full border border-green-500 text-green-500 py-3 rounded-xl hover:bg-green-500/10 transition">Próximo</button>
+            </div>
+
+            <div id="olheiro-step-3" class="modal-step hidden">
+                <h3 class="text-xl font-bold mb-6 text-green-500">Gestão de Talentos</h3>
+                <p class="text-slate-400 mb-8">Salve jogadores em sua "Lista de Observação", adicione notas privadas e compartilhe perfis com sua comissão técnica.</p>
+                <div class="grid grid-cols-2 gap-4 mb-8 text-center text-xs">
+                    <div class="bg-slate-900 p-3 rounded-lg border border-white/5">Salvar Perfil</div>
+                    <div class="bg-slate-900 p-3 rounded-lg border border-white/5">Agendar Teste</div>
+                </div>
+                <button onclick="closeModal('modal-olheiro')" class="w-full bg-green-500 text-slate-950 font-bold py-4 rounded-xl btn-glow">Iniciar Prospecção</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
