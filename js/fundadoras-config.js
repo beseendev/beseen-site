@@ -5,7 +5,7 @@ window.FUNDADORAS_CONFIG = {
     // WhatsApp comercial, somente dígitos com DDI (ex.: "5548999999999"). Usado nos contatos alternativos com whatsapp: true.
     whatsappNumber: "5548996537789",
     // E-mail comercial: canal do botão principal "Quero ser uma Empresa Fundadora".
-    email: "beseensuporte@gmail.com",
+    email: "comercial@beseen.app.br",
     // Contatos alternativos exibidos na página (rótulo + link). Lista vazia oculta o bloco.
     alternativeContacts: [
         { label: "Falar com Adriano Giovan no WhatsApp: (48) 99653-7789", whatsapp: true },
